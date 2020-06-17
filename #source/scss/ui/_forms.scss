@@ -1,0 +1,49 @@
+//<FORM>====================================================================================================
+.form {
+  &__btn {
+    @include button-reset;
+  }
+}
+
+.form-row {
+  @include flexbox();
+}
+
+.form__column {
+  padding: 0px 15px;
+}
+
+.form-input {}
+
+.form-button {}
+
+//</FORM>====================================================================================================
+
+//<INPUT>====================================================================================================
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.input {
+  border-radius: 0 !important;
+  width: 100%;
+  display: block;
+  padding: 20px 30px 20px 10px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+
+  &.focus {}
+
+  &.err {}
+}
+
+textarea.input {
+  resize: none;
+  padding: 0px 0px;
+}
+
+//</INPUT>====================================================================================================
